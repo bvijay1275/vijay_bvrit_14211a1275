@@ -65,6 +65,10 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void remove(int index) {
 		// Add your implementation here
+		int i;
+		for(i=index;i<students.length;i++)
+			students[i]=students[i+1];
+			
 	}
 
 	@Override
